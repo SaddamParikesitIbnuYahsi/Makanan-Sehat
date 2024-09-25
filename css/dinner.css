@@ -53,6 +53,10 @@ body {
     margin-top: 10px;
 }
 
+.menu:hover{
+    color: rgb(168, 168, 168);
+}
+
 .menu.active {
     color: white;
 }
@@ -91,15 +95,25 @@ hr {
     font-family: 'Poppins', sans-serif;
 }
 
-#Input {
+#searchBar {
     color: white;
 }
 
 .auth-buttons button {
     background-color: #232222;
-    border: 1px solid #727272;
     color: white;
-    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.auth-buttons .signin {
+    border: 1px solid #727272;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
     border-radius: 20px;
     margin-left: 10px;
     cursor: pointer;
@@ -108,7 +122,27 @@ hr {
 
 .auth-buttons .login {
     background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-buttons .signin:hover {
+    background-color: #8B5CFF; 
     border: none;
+}
+
+.auth-buttons .login:hover {
+    background-color: #8B5CFF; 
+    border: none;
+}
+
+.auth-buttons button:focus {
+    outline: none;
 }
 
 .hero-section {
@@ -183,6 +217,7 @@ hr {
     text-align: center;
     width: 31%;
     min-width: 200px;
+    max-width: 320px;
     margin: 5px;
     flex: 1 1 30%;
     display: flex;
@@ -202,12 +237,22 @@ hr {
     font-size: 15px;
     margin-bottom: 10px;
     display: flex;
-    margin-right: 210px;
     width: 100%;
     font-weight: 500;
 }
 
 .card button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card button a {
     background-color: #232222;
     color: white;
     border: none;
@@ -215,8 +260,12 @@ hr {
     border-radius: 15px;
     cursor: pointer;
     display: flex;
-    margin-left: 238px;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #8B5CFF; 
 }
 
 h1 {

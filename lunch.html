@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waliyan</title>
     <link rel="stylesheet" href="css/lunch.css">
-    <link rel="stylesheet" href="css/breakfast.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
@@ -24,11 +23,11 @@
         <main class="main-content">
             <header>
                 <div class="search-bar">
-                    <input type="text" id="Input" placeholder="Cari Makanan">
+                    <input type="text" id="searchBar" placeholder="Search for recipes..." oninput="searchRecipe()">>
                 </div>
                 <div class="auth-buttons">
-                    <button class="sign-up">Sign Up</button>
-                    <button class="login">Login</button>
+                    <button><a href="signin.html" class="signin" id="signupBtn">Sign Up</a></button>
+                    <button><a href="login.html" class="login" id="loginBtn">Login</a></button>
                 </div>
             </header>
             <hr>
@@ -46,51 +45,51 @@
                     <div class="card">
                         <img src="img/sop bening.jpg" alt="Sop Bening">
                         <h3>Sop Bening</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/sopbening.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/ikan dori crispy.jpg" alt="Ikan Dori Crispy">
                         <h3>Ikan Dori Crispy</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/ikandori.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/sapi lada hitam.jpg" alt="Sapi Lada Hitam">
                         <h3>Sapi Lada Hitam</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/sapilada.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/pecel.jpg" alt="Pecel">
                         <h3>Pecel</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/pecel.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/ayam panggang.jpg" alt="Ayam Panggang">
                         <h3>Ayam Panggang</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/ayampanggang.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/ayam black pepper.jpg" alt="Ayam Black Pepper">
                         <h3>Ayam Black Pepper</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/ayamblackpepper.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                         <img src="img/ayam suwir kemangi.jpg" alt="Ayam Suwir Kemangi">
                         <h3>Ayam Suwir Kemangi</h3>
-                        <button>Lihat</button>
+                        <button><a href="menu/ayamsuwir.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                     <img src="img/bola daging.jpg" alt="Bola daging">
                     <h3>Bola Daging</h3>
-                    <button>Lihat</button>
+                    <button><a href="menu/boladaging.html" class="lihat-btn">Lihat</a></button>
                     </div>
                     <div class="card">
                     <img src="img/salad pasta.jpg" alt="Salad Pasta">
                     <h3>Salad Pasta</h3>
-                    <button>Lihat</button>
+                    <button><a href="menu/saladpasta.html" class="lihat-btn">Lihat</a></button>
                     </div>
                 </div>
             </section>
         </main>
     </div>
-    <script src="java/sidebar.js"></script>
+    <script src="java/script.js"></script>
 </body>

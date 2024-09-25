@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Akun</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Buat Akun</h2>
+        <form id="registrationForm">
+            <input type="text" placeholder="Nama Depan" required>
+            <input type="text" placeholder="Nama Belakang" required>
+            <input type="text" placeholder="Email/Nomor" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Konfirmasi Password" required>
+
+            <!-- Bagian untuk memasukkan tanggal lahir -->
+            <div class="date-input">
+                <input type="text" placeholder="Bulan">
+                <input type="text" placeholder="Tanggal">
+                <input type="text" placeholder="Tahun">
+            </div>
+            
+            <!-- Pesan kesalahan -->
+            <p id="errorMessage" style="color: red; display: none;">Password tidak cocok, coba lagi!</p>
+            
+            <!-- Tombol untuk Submit Form -->
+            <button type="submit">Sign In.</button>
+        </form>
+    </div>
+
+    <!-- JavaScript di file terpisah -->
+    <script src="java/script.js"></script>
+</body>
+</html>

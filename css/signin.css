@@ -1,0 +1,95 @@
+/* Style umum untuk body */
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container untuk form */
+.form-container {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style untuk judul form */
+.form-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Style untuk semua input field */
+input[type="text"],
+input[type="password"] {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Style untuk input tanggal lahir */
+.date-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Style untuk input bulan, tanggal, tahun */
+.date-input input {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+/* Style untuk tombol submit */
+button[type="submit"] {
+    background: linear-gradient(45deg, #B72EB2, #DF6ABA);
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #B72EB2, #DF6ABA);
+}
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #A63EC5;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+body::before {
+    top: -150px;
+    left: -150px;
+}
+
+body::after {
+    bottom: -150px;
+    right: -150px;
+}

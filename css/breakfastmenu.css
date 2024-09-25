@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #151515;
+    padding: 20px;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.menu {
+    color: #585858;
+    text-decoration: none;
+    font-size: 21px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu:hover{
+    color: rgb(168, 168, 168);
+}
+
+.menu.active {
+    color: white;
+}
+
+.container {
+    margin-left: 16%;
+    padding: 10px;
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-content img {
+    width: 50%;
+    border-radius: 15px;
+}
+
+.recipe-details {
+    width: 45%;
+}
+
+.recipe-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #727272;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+    display: flex;
+    margin-left: 0px;
+}
+
+.recipe-details ul li,
+.recipe-details ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #727272;
+}
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+}
+
+.image-and-ingredients {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-and-ingredients img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.ingredients {
+    width: 45%;
+    text-align: left;
+}
+
+.ingredients h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ingredients ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.ingredients ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.instructions {
+    width: 45%;
+    text-align: left;
+}
+
+.instructions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.instructions ol {
+    margin-left: 20px;
+}
+
+.instructions ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+}
