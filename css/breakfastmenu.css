@@ -101,23 +101,26 @@ body {
 
 .image-and-ingredients {
     width: 45%;
-    background-color: #1a1a1a;
-    padding: 20px;
+    padding: 0px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
 }
 
 .image-and-ingredients img {
     width: 100%;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .ingredients {
-    width: 45%;
+    width: 100%;  /* Sesuaikan ukuran box sesuai kebutuhan */
     text-align: left;
+    padding: 20px;  /* Tambahkan padding di dalam box */
+    background-color: #1a1a1a;  /* Warna latar belakang hitam */
+    border-radius: 15px;  /* Membuat sudut kotak menjadi melengkung */
+    border: 1px solid #444;  /* Tambahkan border untuk mempertegas kotak */
 }
 
 .ingredients h2 {
@@ -144,6 +147,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: left;
+    margin-right: 10px;
 }
 
 .instructions h2 {
